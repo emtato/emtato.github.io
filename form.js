@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const form = document.getElementById("tipForm");
+    const form = document.getElementById("tip-form");
 
     form.addEventListener("submit", function (e) {
 

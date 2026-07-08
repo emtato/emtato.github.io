@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submit a Tip | Public Safety Desk</title>
+  <link rel="stylesheet" href="tip.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="tip.html" class="brand" aria-label="Back to tip page">
+        <span class="badge">NCPD</span>
+        <span class="brand-text">Night City Police Department</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#" class="void-link">About</a>
+        <a href="#" class="void-link">Services</a>
+        <a href="#" class="void-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="form-main">
+    <section class="form-card" aria-labelledby="form-title">
+      <p class="eyebrow">Confidential submission</p>
+      <h1 id="form-title">Submit a Tip</h1>
+      <p class="lede compact">Complete all required fields. Accuracy matters.</p>
+
+      <form id="tip-form" novalidate>
+        <label for="zip-code">Zip code</label>
+        <input id="zip-code" name="zipCode" type="text" inputmode="numeric" autocomplete="postal-code" required placeholder="Enter zip code">
+        <p class="field-hint">Only tips from the active search area are accepted.</p>
+
+        <label for="reported-name">Name of person you are reporting</label>
+        <input id="reported-name" name="reportedName" type="text" autocomplete="off" required placeholder="Enter name. if you cant find it, maybe try looking again at the first item">
+
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="6" placeholder="What did you see?"></textarea>
+
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+
+        <button type="submit" class="submit-button">Submit Tip</button>
+      </form>
+
+    </section>
+  </main>
+
+  <script src="form.js"></script>
+</body>
+</html>

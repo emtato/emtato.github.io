@@ -4,13 +4,13 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #fffbcc; /* A light, fry-like yellow */
     color: #333;
 }
 
 /* Header Styles */
 header {
-    background: #007bff;
+    background: #ff6600; /* NYF’s bright orange/yellow fry-themed branding */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -42,6 +42,14 @@ main {
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    background-color: #fff3e0;
+    padding: 10px;
+    border-left: 5px solid #ff6600;
+    margin: 10px 0;
+    font-style: italic;
 }
 
 /* Footer Styles */

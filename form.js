@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         e.preventDefault();
 
-        const zip = document.getElementById("zipcode").value.trim();
+        const zip = document.getElementById("zip-code").value.trim();
 
-        const name = document.getElementById("suspect").value.trim().toLowerCase();
+        const name = document.getElementById("reported-name").value.trim().toLowerCase();
 
         if (zip !== "87104") {
 
@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
 
         }
-
-        // Everything matches
 
         window.location.href = "success.html";
 
